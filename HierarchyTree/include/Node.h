@@ -1,6 +1,6 @@
 #ifndef NODE_H
 #define NODE_H
-
+#include "Member.h"
 
 class Node
 {
@@ -15,6 +15,10 @@ class Node
 
     private:
         unsigned int m_Counter;
+        Member data;
+        Node* seniorColleague;
+        Node* firstColleague;
+        Node* firstJuniorColleague;
 };
 
 #endif // NODE_H
