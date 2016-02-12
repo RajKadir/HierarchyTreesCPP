@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1455309831 source:c:\svn\hierarchytreescpp\trunk\hierarchytree\src\node.cpp
+	"Node.h"
+
+1455309944 c:\svn\hierarchytreescpp\trunk\hierarchytree\include\node.h
+	"Member.h"
+
+1455309507 source:c:\svn\hierarchytreescpp\trunk\hierarchytree\src\member.cpp
+	"Member.h"
+
+1455309507 c:\svn\hierarchytreescpp\trunk\hierarchytree\include\member.h
+
+1455309926 source:c:\svn\hierarchytreescpp\trunk\hierarchytree\src\main.cpp
+	"Main.h"
+
+1455309883 c:\svn\hierarchytreescpp\trunk\hierarchytree\include\main.h
+
