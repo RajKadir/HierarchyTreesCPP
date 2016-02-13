@@ -5,20 +5,19 @@
 class Node
 {
     public:
-        Node();
-        virtual ~Node();
-
+        Node(Member _data, Node* _parent);
+        Node(Member _data, int _parent);
+        // Getters and setters
         unsigned int GetCounter() { return m_Counter; }
         void SetCounter(unsigned int val) { m_Counter = val; }
 
+        Member GetMember() { return m_Data; }
     protected:
 
     private:
         unsigned int m_Counter;
-        Member data;
-        Node* seniorColleague;
-        Node* firstColleague;
-        Node* firstJuniorColleague;
+        Member m_Data;
+        Node* m_Parent;
 };
 
 #endif // NODE_H

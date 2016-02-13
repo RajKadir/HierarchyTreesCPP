@@ -1,11 +1,17 @@
 #include "Node.h"
 
-Node::Node()
+
+// Constructor
+Node::Node(Member _data, Node* _parent)
 {
-    //ctor
+    // Set the value of this Node
+    m_Data = _data;
+    m_Parent = _parent;
 }
 
-Node::~Node()
+Node::Node(Member _data, int _parent)
 {
-    //dtor
+    // Set the value of this Node
+    m_Data = _data;
+    m_Counter = _parent;
 }
