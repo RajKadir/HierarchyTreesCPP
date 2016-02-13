@@ -5,19 +5,16 @@
 class Node
 {
     public:
-        Node(Member _data, Node* _parent);
-        Node(Member _data, int _parent);
+        Node();
         // Getters and setters
-        unsigned int GetCounter() { return m_Counter; }
-        void SetCounter(unsigned int val) { m_Counter = val; }
-
-        Member GetMember() { return m_Data; }
+        int getData() { return data; }
+        void setData(int val) { data = val; }
     protected:
 
     private:
-        unsigned int m_Counter;
-        Member m_Data;
-        Node* m_Parent;
+        int data;
+        Node* left;
+        Node* right;
 };
 
 #endif // NODE_H
