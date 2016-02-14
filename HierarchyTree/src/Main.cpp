@@ -1,4 +1,5 @@
 #include "Main.h"
+#include "Node.h";
 #include <iostream>
 using namespace std;
 
@@ -40,16 +41,24 @@ bool Search(BstNode* root, int data){
 
 int main(){
 
-    BstNode* root = NULL; // Create an empty tree
+/*    BstNode* root = NULL; // Create an empty tree
     root = Insert(root, 10);
     root = Insert(root, 50);
     root = Insert(root, 5);
+*/
+
+    Node* root = 0;
+    root = root->Insert(root, 10);
+    root = root->Insert(root, 50);
+    root = root->Insert(root, 60);
+
+
 
     int number;
 
     cout << "Enter a number to search in the tree \n";
     cin >> number;
-    if(Search(root, number) == true) cout << "Found\n";
+    if(root->Search(root, number) == true) cout << "Found\n";
     else cout << "Not found \n";
 }
 
