@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -31,6 +33,13 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="include/Main.h" />
+		<Unit filename="include/Member.h" />
+		<Unit filename="include/Node.h" />
+		<Unit filename="src/BST.cpp" />
+		<Unit filename="src/Main.cpp" />
+		<Unit filename="src/Member.cpp" />
+		<Unit filename="src/Node.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
