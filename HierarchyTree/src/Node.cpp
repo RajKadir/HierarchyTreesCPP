@@ -31,8 +31,13 @@ Node* Node::Insert(Node* root, int data){
 }
 
 bool Node::Search(Node* root, int data){
-        if(root == 0) return false;
-        else if(root->data == data) return true;
-        else if(data <= root->data) return Search(root->left, data);
-        else return Search(root->right, data);
+    // Assume our search is false
+    bool valid = false;
+
+    if(root == 0) valid = false;
+    else if(root->data == data) valid = true;
+    else if(data <= root->data) return Search(root->left, data);
+    else return Search(root->right, data);
+
+    return valid;
 }
