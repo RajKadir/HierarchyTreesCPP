@@ -36,8 +36,8 @@ bool Node::Search(Node* root, int data){
 
     if(root == 0) valid = false;
     else if(root->data == data) valid = true;
-    else if(data <= root->data) return Search(root->left, data);
-    else return Search(root->right, data);
+    else if(data <= root->data) valid = Search(root->left, data);
+    else valid = Search(root->right, data);
 
     return valid;
 }
